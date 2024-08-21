@@ -1,4 +1,70 @@
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 50px;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+}
+
+nav h4 {
+    margin: auto 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    margin: auto 0;
+}
+
+.cr7-item {
+    position: relative;
+}
+
+.cr7-item::before {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; 
+    height: 1px;
+    background-color: red;
+}
+
+h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 5.9rem;
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
+}
+
+section {
+    background-color: black;
+    height: 100vh;
+}
+
+.section-2 {
+    background-color: white;
+    height: 100vh;
+}
+
+
+
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -31,14 +97,18 @@ ul li {
 .cr7-item::before {
     content: "";
     position: absolute;
-    top: 50%; /* Position at the top of the list item */
+    top: 50%; 
     left: 50%;
     transform: translateX(-50%);
-    width: 50%; /* Adjust to control the line width */
-    height: 1px; /* Line thickness */
+    width: 50%; 
+    height: 1px;
     background-color: red;
 }
 
+.char {
+    transform: translate(115px);
+    transition: transform .5s;
+}
 
 section {
     background-color: black;
@@ -48,4 +118,4 @@ section {
 .section-2 {
     background-color: white;
     height: 100vh;
-}
+} */
