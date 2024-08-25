@@ -6,7 +6,8 @@
 
 nav {
   height: 50px;
-  background-color: white;
+  background-color: transparent;
+  color: white;
   width: 100%;
   position: fixed;
 }
@@ -40,25 +41,36 @@ ul li {
 }
 
 #my-text {
-  font-size: calc(16px + 2vw);
+  font-size: calc(20px + 2.2vw);
   text-transform: uppercase;
-  font-family: "Bebas Neue";
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  line-height: 5.9rem;
   font-family: "Oswald", sans-serif;
 }
 
 .char {
   transform: translateY(115px);
-  transition: transform 0.5s;
+  transition: transform 1.5s;
 }
 
-section {
+.main {
+  height: 50vh;
   background-color: black;
-  height: 100vh;
 }
 
 .section-2 {
   background-color: white;
   height: 100vh;
+}
+
+.main-col {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.btn-row a{
+  text-decoration: none;
+  color: white;
+  font-size: calc(16px + 0.5vw);
 }
