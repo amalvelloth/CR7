@@ -180,3 +180,12 @@ a {
   height: 128px;
   border: none;
 }
+
+
+
+
+@media (max-width :480px) {
+  #my-text {
+    font-size: calc(18px + 4.7vw);
+  }
+}
