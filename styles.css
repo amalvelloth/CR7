@@ -75,6 +75,10 @@ a {
   background-color: black;
 }
 .main2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   height: 50vh;
   background-color: black;
 }
@@ -117,6 +121,17 @@ a {
   height: 100%;
   background-color: white;
   transform: translateY(0);
+}
+.main2 .bottom-box1,
+.main2 .bottom-box2,
+.main2 .bottom-box3 {
+  flex: 1;
+  position: relative;
+}
+
+.main2 img {
+  width: 100%;
+  height: auto;
 }
 
 #my-text {
@@ -181,11 +196,20 @@ a {
   border: none;
 }
 
-
-
-
-@media (max-width :480px) {
+@media (max-width: 480px) {
   #my-text {
     font-size: calc(18px + 4.7vw);
+  }
+}
+
+@media (max-width: 768px) {
+  .main2 {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .main2 .bottom-box1,
+  .main2 .bottom-box2,
+  .main2 .bottom-box3 {
+    width: 100%;
   }
 }
