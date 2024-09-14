@@ -15,6 +15,7 @@ window.addEventListener("load", function () {
       document.querySelector(".content").style.opacity = 1;
     },
   });
+  
 
   tl.to(".overlay-box1", {
     duration: 1.5,
