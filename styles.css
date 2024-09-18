@@ -222,15 +222,7 @@ a {
 }
 
 
-.header {
-  width: 100%;
-  color: white;
-  mix-blend-mode: difference;
-  position: fixed;
-  z-index: 50;
-  height: 128px;
-  border: none;
-}
+
 
 @media (max-width: 480px) {
   #my-text {
@@ -352,7 +344,6 @@ nav {
   justify-content: center;
   align-items: center;
   color: white;
-  z-index: 51;
 }
 
 .menu-item {
