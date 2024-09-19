@@ -2,7 +2,7 @@ const myText = new SplitType("#my-text");
 
 gsap.to(".char", {
   y: 0,
-  stagger: 0.02,
+  stagger: 0.015,
   delay: 0.01,
   duration: 0.1,
   ease: "power1.out",
@@ -35,23 +35,25 @@ window.addEventListener("load", function () {
     ease: "power4.inOut",
     delay: -1.2
   });
+
+  // bottom side 
   tl.to(".bottom-overlay-box1", {
     duration: 1.5,
     x: "100%",
-    ease: "power4.inOut",
-    delay: -.5
+    ease: "power4.in",
+    delay: -.6
   });
   tl.to(".bottom-overlay-box2", {
     duration: 1.5,
     x: "100%",
-    ease: "power4.inOut",
-    delay: -1.2
+    ease: "power4.in",
+    delay: -1.4
   });
   tl.to(".bottom-overlay-box3", {
     duration: 1.5,
     x: "100%",
-    ease: "power4.inOut",
-    delay: -1.5
+    ease: "power4.in",
+    delay: -1.3
   });
 });
 

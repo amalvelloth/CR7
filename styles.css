@@ -142,6 +142,10 @@ nav .burger {
   color: #cdc6be;
 }
 
+.sub-nav p a {
+  color: aliceblue;
+}
+
 nav h4 {
   margin: auto 0;
 }
@@ -336,7 +340,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 20px;
   z-index: 100;
 }
 
@@ -345,7 +349,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 20px;
   z-index: 100;
 }
 
@@ -354,7 +358,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 20px;
   z-index: 100;
 }
 
@@ -378,7 +382,7 @@ a {
     font-size: calc(18px + 4.7vw);
   }
   .main2 {
-    height: 110vh;
+    height: 100vh;
   }
 }
 
@@ -401,4 +405,78 @@ a {
   .bottom-box1 {
     min-height: 350px;
   }
+}
+
+
+
+.l-shape1 {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: 100;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.l-shape1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 50px;
+  height: 2px;
+  background-color: white;  
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.bottom-box1:hover .l-shape1,
+.bottom-box2:hover .l-shape1,
+.bottom-box3:hover .l-shape1 {
+  width: 2px;
+  height: 25px;
+}
+.bottom-box1:hover .l-shape1::before,
+.bottom-box2:hover .l-shape1::before,
+.bottom-box3:hover .l-shape1::before {
+  width: 25px;
+  height: 2px;
+}
+
+.l-shape2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 50px;
+  background-color: white;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  z-index: 100;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.l-shape2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.bottom-box1:hover .l-shape2,
+.bottom-box2:hover .l-shape2,
+.bottom-box3:hover .l-shape2 {
+  width: 2px;
+  height: 25px;
+}
+.bottom-box1:hover .l-shape2::before,
+.bottom-box2:hover .l-shape2::before,
+.bottom-box3:hover .l-shape2::before {
+  width: 25px;
+  height: 2px;
 }
