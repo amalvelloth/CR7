@@ -412,12 +412,12 @@ a {
 .l-shape1 {
   position: absolute;
   width: 2px;
-  height: 50px;
+  height: 35px;
   background-color: white;
   margin-top: 10px;
   margin-left: 10px;
   z-index: 100;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out;
 }
 
 .l-shape1::before {
@@ -425,7 +425,7 @@ a {
   position: absolute;
   top: 0;
   left: 100%;
-  width: 50px;
+  width: 35px;
   height: 2px;
   background-color: white;  
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
@@ -436,6 +436,8 @@ a {
 .bottom-box3:hover .l-shape1 {
   width: 2px;
   height: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .bottom-box1:hover .l-shape1::before,
 .bottom-box2:hover .l-shape1::before,
@@ -449,12 +451,12 @@ a {
   right: 0;
   bottom: 0;
   width: 2px;
-  height: 50px;
+  height: 35px;
   background-color: white;
   margin-right: 10px;
   margin-bottom: 10px;
   z-index: 100;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out;
 }
 
 .l-shape2::before {
@@ -462,7 +464,7 @@ a {
   position: absolute;
   bottom: 0;
   right: 100%;
-  width: 50px;
+  width: 35px;
   height: 2px;
   background-color: white;
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
@@ -473,7 +475,10 @@ a {
 .bottom-box3:hover .l-shape2 {
   width: 2px;
   height: 25px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
+
 .bottom-box1:hover .l-shape2::before,
 .bottom-box2:hover .l-shape2::before,
 .bottom-box3:hover .l-shape2::before {
