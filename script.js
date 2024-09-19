@@ -35,6 +35,24 @@ window.addEventListener("load", function () {
     ease: "power4.inOut",
     delay: -1.2
   });
+  tl.to(".bottom-overlay-box1", {
+    duration: 1.5,
+    x: "100%",
+    ease: "power4.inOut",
+    delay: -.5
+  });
+  tl.to(".bottom-overlay-box2", {
+    duration: 1.5,
+    x: "100%",
+    ease: "power4.inOut",
+    delay: -1.2
+  });
+  tl.to(".bottom-overlay-box3", {
+    duration: 1.5,
+    x: "100%",
+    ease: "power4.inOut",
+    delay: -1.5
+  });
 });
 
 
