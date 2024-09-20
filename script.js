@@ -150,12 +150,16 @@ cursorScale.forEach((link) => {
   link.addEventListener("mouseleave", () => {
     cursor.classList.remove("grow");
     cursor.classList.remove("grow-small");
+    cursor.classList.remove("grow-medium");
   });
   link.addEventListener("mousemove", () => {
     cursor.classList.add("grow");
     if (link.classList.contains("small")) {
       cursor.classList.remove("grow");
       cursor.classList.add("grow-small");
+    } else if (link.classList.contains("medium")) {
+      cursor.classList.remove("grow");
+      cursor.classList.add("grow-medium");
     }
   });
 });
