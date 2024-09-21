@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Heathergreen";
+  src: url(./Heathergreen.otf);
+}
+
 .cursor {
   position: fixed;
     width: 40px;
@@ -202,6 +207,31 @@ ul li {
   max-width: 400px;
 }
 
+.img-caption {
+  font-size: 50px;
+  color: white;
+  bottom: 1rem;
+  font-family: "Heathergreen";
+}
+.img-caption::after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('https://img.icons8.com/?size=100&id=19318&format=png&color=000000'); /* Replace with your icon URL */
+  background-size: cover;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.cristiano {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the image */
+  max-width: 100%; /* Responsive */
+  max-height: 100%; /* Prevent overflow */
+}
 
 #my-text {
   font-size: calc(20px + 2.2vw);
