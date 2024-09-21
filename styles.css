@@ -203,15 +203,20 @@ ul li {
   background-color: red;
 }
 
-.main img {
-  max-width: 400px;
+.main .cristiano {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 3rem 0;
+  object-fit: cover;
 }
 
-.img-caption {
+.main .img-caption {
   font-size: 50px;
   color: white;
-  bottom: 1rem;
+  bottom: 0;
   font-family: "Heathergreen";
+  margin: 0;
 }
 .img-caption::after {
   content: '';
@@ -224,7 +229,7 @@ ul li {
   vertical-align: middle;
 }
 
-.cristiano {
+.main .cristiano-b-w {
   position: absolute;
   top: 50%;
   left: 50%;
