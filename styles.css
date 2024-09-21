@@ -27,9 +27,11 @@
   border: none;
 }
 
-.grow-medium {
-  transform: scale(2.5);
+.grow-smaller {
+  transform: scale(0.7);
   background: #fff;
+  mix-blend-mode: lighten;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .grow-small {
@@ -194,6 +196,10 @@ ul li {
   width: 50%;
   height: 1px;
   background-color: red;
+}
+
+.main img {
+  max-width: 400px;
 }
 
 
@@ -497,6 +503,9 @@ a {
   }
   .grow {
     transform: scale(3.3);
+  }
+  .main img {
+    max-width: 300px;
   }
 
 }
