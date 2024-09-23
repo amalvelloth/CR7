@@ -223,7 +223,7 @@ ul li {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-image: url('https://img.icons8.com/?size=100&id=19318&format=png&color=000000'); /* Replace with your icon URL */
+  background-image: url('https://img.icons8.com/?size=100&id=19318&format=png&color=000000');
   background-size: cover;
   margin-left: 10px;
   vertical-align: middle;
@@ -233,9 +233,10 @@ ul li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the image */
-  max-width: 100%; /* Responsive */
-  max-height: 100%; /* Prevent overflow */
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  will-change: transform;
 }
 
 #my-text {

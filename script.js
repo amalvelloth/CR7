@@ -10,6 +10,23 @@ gsap.to(".char", {
   ease: "power1.out",
 });
 
+// mouse parallax
+const image = document.querySelector('.cristiano-b-w');
+
+document.addEventListener('mousemove', (e) => {
+  const { clientX, clientY } = e;
+  const xPos = (clientX / window.innerWidth) - 0.5;
+  const yPos = (clientY / window.innerHeight) - 0.5;
+
+  gsap.to(image, {
+    x: xPos * 20,
+    y: yPos * 20,
+    ease: 'power2.out',
+    duration: 0.3,
+  });
+});
+
+
 // top reveal animation
 window.addEventListener("load", function () {
   const tl = gsap.timeline({
