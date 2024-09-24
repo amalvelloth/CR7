@@ -1,3 +1,7 @@
+
+
+
+
 // GSAP
 // main text animation
 const myText = new SplitType("#my-text");
@@ -9,6 +13,7 @@ gsap.to(".char", {
   duration: 0.1,
   ease: "power1.out",
 });
+
 
 // mouse parallax
 const image = document.querySelector('.cristiano-b-w');
