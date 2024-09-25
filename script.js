@@ -10,7 +10,7 @@ gsap.to(".char", {
   y: 0,
   stagger: 0.015,
   delay: 0.01,
-  duration: 0.1,
+  duration: 0.3,
   ease: "power1.out",
 });
 
